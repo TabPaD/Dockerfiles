@@ -1,4 +1,4 @@
-FROM IMAGE="rockylinux/rockylinux:9.4"
+FROM rockylinux/rockylinux:9.4
 LABEL maintainer="TabPaD <tabpad@hotmail.com>"
 RUN  dnf -y groupinstall "Development Tools" \
   && dnf install -y epel-release rpmdevtools curl tar rsync --allowerasing \
